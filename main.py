@@ -13,10 +13,14 @@ def pontOszz(tomb):
         osszeg += tomb[i]
         i += 1
     return osszeg
-
-
 #teszteset
 
+def jatekosVeszetettTeszt():
+    jatekosPont = [9, 9, 9, 9]
+    gepPontok = [1, 1, 1, 1]
+    print(eredmeny(jatekosPont, gepPontok))
 
+def tesztek():
+    jatekosVeszetettTeszt()
 
-
+tesztek()
