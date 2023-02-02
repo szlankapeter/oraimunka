@@ -18,50 +18,92 @@ def pontOszz(tomb):
 #teszteset
 
 def jatekosVeszetettTeszt():
-    jatekosPont = [9, 9, 9, 9]
-    gepPontok = [7, 4, 5, 3]
+    jatekosPont = [11, 5, 6]
+    gepPontok = [7, 4, 5]
+    print("Teszt(Játékos veszített --> 21 felett): ")
     kapott = eredmeny(jatekosPont, gepPontok)
     vart = "játékos vesztett"
     if kapott == vart:
-        print("A teszt sikeres")
+        print("\tA teszt sikeres\n")
     else:
-        print("A teszt sikertelen")
+        print("\tA teszt sikertelen\n")
+
+def jatekosVeszetettTeszt_2():
+    jatekosPont = [11, 2, 5]
+    gepPontok = [11, 5, 4]
+    print("Teszt2(Játékos veszített --> Kevesebb pont): ")
+    kapott = eredmeny(jatekosPont, gepPontok)
+    vart = "játékos vesztett"
+    if kapott == vart:
+        print("\tA teszt sikeres\n")
+    else:
+        print("\tA teszt sikertelen\n")
+
+def jatekosVeszetettTeszt_3():
+    jatekosPont = [11, 4, 5]
+    gepPontok = [11, 9]
+    print("Teszt3(Játékos veszített --> Több lap): ")
+    kapott = eredmeny(jatekosPont, gepPontok)
+    vart = "játékos vesztett"
+    if kapott == vart:
+        print("\tA teszt sikeres\n")
+    else:
+        print("\tA teszt sikertelen\n")
 
 
 def gepVeszetettTeszt():
-    jatekosPont = [7, 4, 5, 3]
-    gepPontok = [9, 9, 9, 9]
+    jatekosPont = [7, 4, 5]
+    gepPontok = [11, 5, 6]
+    print("Teszt(Gép veszített --> 21 felett): ")
     kapott = eredmeny(jatekosPont, gepPontok)
     vart = "gép vesztett"
     if kapott == vart:
-        print("A teszt sikeres")
+        print("\tA teszt sikeres\n")
     else:
-        print("A teszt sikertelen")
+        print("\tA teszt sikertelen\n")
+def gepVeszetettTeszt_2():
+    jatekosPont = [11, 5, 4]
+    gepPontok = [11, 2, 5]
+    print("Teszt2(Gép veszített --> Kevesebb pont): ")
+    kapott = eredmeny(jatekosPont, gepPontok)
+    vart = "gép vesztett"
+    if kapott == vart:
+        print("\tA teszt sikeres\n")
+    else:
+        print("\tA teszt sikertelen\n")
+
+def gepVeszetettTeszt_3():
+    jatekosPont = [11, 9]
+    gepPontok = [11, 4, 5]
+    print("Teszt3(Játékos veszített --> Több lap): ")
+    kapott = eredmeny(jatekosPont, gepPontok)
+    vart = "játékos vesztett"
+    if kapott == vart:
+        print("\tA teszt sikeres\n")
+    else:
+        print("\tA teszt sikertelen\n")
+
 
 def dontetlen():
-    jatekosPont = [7, 4, 5, 3]
-    gepPontok = [7, 4, 5, 3]
+    jatekosPont = [11, 9]
+    gepPontok = [11, 9]
+    print("Teszt(Döntetlen): ")
     kapott = eredmeny(jatekosPont, gepPontok)
-    vart = "döntetlen"
+    vart = "Döntetlen"
     if kapott == vart:
-        print("A teszt sikeres")
+        print("\tA teszt sikeres\n")
     else:
-        print("A teszt sikertelen")
-def mindenkiVesztett():
-    jatekosPont = [9, 9, 9, 9]
-    gepPontok = [9, 9, 9, 8]
-    kapott = eredmeny(jatekosPont, gepPontok)
-    vart = "mindkettő vesztett"
-    if kapott == vart:
-        print("A teszt sikeres")
-    else:
-        print("A teszt sikertelen")
+        print("\tA teszt sikertelen\n")
+
 
 
 def tesztek():
     jatekosVeszetettTeszt()
+    jatekosVeszetettTeszt_2()
+    jatekosVeszetettTeszt_3()
     gepVeszetettTeszt()
+    gepVeszetettTeszt_2()
+    gepVeszetettTeszt_3()
     dontetlen()
-    mindenkiVesztett()
 
 tesztek()
