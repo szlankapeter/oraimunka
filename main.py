@@ -84,10 +84,20 @@ def gepVeszetettTeszt_3():
         print("\tA teszt sikertelen\n")
 
 
-def dontetlen():
+def dontetlen_1():
     jatekosPont = [11, 9]
     gepPontok = [11, 9]
-    print("Teszt(Döntetlen): ")
+    print("Teszt(Döntetlen) --> Mindkettő nyert: ")
+    kapott = eredmeny(jatekosPont, gepPontok)
+    vart = "Döntetlen"
+    if kapott == vart:
+        print("\tA teszt sikeres\n")
+    else:
+        print("\tA teszt sikertelen\n")
+def dontetlen_2():
+    jatekosPont = [11, 11]
+    gepPontok = [11, 11]
+    print("Teszt(Döntetlen) --> Mindkettő veszített: ")
     kapott = eredmeny(jatekosPont, gepPontok)
     vart = "Döntetlen"
     if kapott == vart:
@@ -104,6 +114,7 @@ def tesztek():
     gepVeszetettTeszt()
     gepVeszetettTeszt_2()
     gepVeszetettTeszt_3()
-    dontetlen()
+    dontetlen_1()
+    dontetlen_2()
 
 tesztek()
