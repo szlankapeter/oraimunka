@@ -108,7 +108,7 @@ def dontetlen_2():
 def dontetlen_3():
     jatekosPont = [11, 10, 3]
     gepPontok = [11, 11]
-    print("Teszt(Döntetlen) --> Mindkettő veszített: ")
+    print("Teszt(Döntetlen) --> Mindkettő veszített(nem egyenlő lapszam): ")
     kapott = eredmeny(jatekosPont, gepPontok)
     vart = "Döntetlen"
     if kapott == vart:
