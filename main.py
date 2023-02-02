@@ -105,7 +105,16 @@ def dontetlen_2():
     else:
         print("\tA teszt sikertelen\n")
 
-
+def dontetlen_3():
+    jatekosPont = [11, 10, 3]
+    gepPontok = [11, 11]
+    print("Teszt(Döntetlen) --> Mindkettő veszített: ")
+    kapott = eredmeny(jatekosPont, gepPontok)
+    vart = "Döntetlen"
+    if kapott == vart:
+        print("\tA teszt sikeres\n")
+    else:
+        print("\tA teszt sikertelen\n")
 
 def tesztek():
     jatekosVeszetettTeszt()
@@ -116,5 +125,6 @@ def tesztek():
     gepVeszetettTeszt_3()
     dontetlen_1()
     dontetlen_2()
+    dontetlen_3()
 
 tesztek()
